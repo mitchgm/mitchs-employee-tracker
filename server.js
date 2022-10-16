@@ -83,10 +83,38 @@ function starterPro() {
 
 // use case functions
 
+function employeeView() {
+
+}
+// end of employeeView function
+
+function departmentView() {
+
+}
+// end of departmentView function
 
 
+function employeeAdd() {
+
+}
+// end of employeeAdd function
 
 
+function employeeRemoval() {
 
+}
+// end of employeeRemoval function
+
+
+function employeeUpdate() {
+
+}
+// end of employeeUpdate function
+
+
+function roleAdd() {
+
+}
+// end of roleAdd function
 
 
