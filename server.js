@@ -43,10 +43,50 @@ function starterPro() {
                 "View The Employees",
                 "View The Departments",
                 "Add an Employee",
-                "Remove an Employees",
+                "Remove an Employee",
                 "Update an Employee Role",
                 "Add an Employee Role",
                 "Exit",
             ],
         })
+
+
+        .then(function ({ task }) {
+            switch (task) {
+                case "View The Employees":
+                    employeeView();
+                    break;
+                // each case has an accompanying function/function break
+                case "View The Departments":
+                    departmentView();
+                    break;
+                case "Add an Employee":
+                    employeeAdd();
+                    break;
+                case "Remove an Employee":
+                    employeeRemoval();
+                    break;
+                case "Update an Employee Role":
+                    employeeUpdate();
+                    break;
+                case "Add an Employee Role":
+                    roleAdd();
+                    break;
+                case "Exit":
+                    connection.exit();
+                    break;
+                // exit case
+            }
+        });
 }
+// end of starting prompt function
+
+// use case functions
+
+
+
+
+
+
+
+
