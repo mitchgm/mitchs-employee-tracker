@@ -27,8 +27,8 @@ user: "root",
 // end of connection function
 
 // this fucntion will connect the sql databse and the mysql together 
-connection.connect(function (err) {
-    if (err) throw err;
+connection.connect(function (error) {
+    if (error) throw error;
     starterPro();
     // this will call the intial prompts
 });
@@ -84,6 +84,12 @@ function starterPro() {
 // use case functions
 
 function employeeView() {
+    const sql = "Select * from employees";
+    db.query(sql, function (error, results) {
+        if (error) throw error;
+        console.table(results);
+        promptSuccess();
+    });
 
 }
 // end of employeeView function
