@@ -6,7 +6,7 @@ VALUES
 ("Miles Cooper"),
 ("Ricky Bobby");
 INSERT INTO roles
--- this is the data that is being insertes 
+-- this is the data that is being inserted into departments
   (title, salary, department_id)
 VALUES
 ("intern" "12,000" "7"),
@@ -18,3 +18,4 @@ VALUES
 ("1" "John" "Smith" "7" "7"),
 ("2" "Miles" "Cooper" "2" "1"),
 ("3" "Ricky" "Bobby" "9" "12");
+-- values for the employee info
